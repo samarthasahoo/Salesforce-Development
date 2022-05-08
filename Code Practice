@@ -1,0 +1,9 @@
+//Date and time is a class and it has different methods like newInstance().
+Date newdate= Date.newInstance(2022,05,08);
+System.debug('Date'+newdate);
+
+Time newtime= Time.newInstance(hour, minute, second, millisecond);
+
+DateTime newdatetime= DateTime.newInstance(2022,05,08,02,47,56);
+String datetime2= newdatetime.format();// date time will show as per local time zone.
+System.debug('Date time is: '+datetime2);
