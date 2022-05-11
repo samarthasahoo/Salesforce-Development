@@ -7,3 +7,36 @@ Time newtime= Time.newInstance(hour, minute, second, millisecond);
 DateTime newdatetime= DateTime.newInstance(2022,05,08,02,47,56);
 String datetime2= newdatetime.format();// date time will show as per local time zone.
 System.debug('Date time is: '+datetime2);
+
+//Create class and object
+public clas dog
+{
+  public string name;
+  public integer age;
+  
+  public void disp()//method
+  {
+    System.debug('Name'+name);
+    System.debug('Age'+age);
+  }
+ }
+ 
+ //on apex code create object
+ dog d1=new dog();
+ d1.name='Sccoby';
+ d1.age=12;
+ d1.disp();
+ 
+ dog d2=new dog();
+ d2.name='Tiger';
+ d2.age=18;
+ d2.disp();
+ 
+ //Collection in salesforce
+ 1.List
+ List<String> obj= new List<String>();
+ obj.add('Ajit');
+ obj.add('Sam');
+ obj.add('Anuska');
+ System.debug('My friends'+obj);
+ 
