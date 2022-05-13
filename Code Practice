@@ -40,3 +40,15 @@ public clas dog
  obj.add('Anuska');
  System.debug('My friends'+obj);
  
+ //Exception
+ try
+{
+lead l= new lead();
+insert l;
+}
+catch(DMLException e)
+{
+    System.debug('following exception has ocurred'+e.getMessage());
+}
+System.debug('trying to insert a new lead record');
+ 
